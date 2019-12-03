@@ -1,0 +1,50 @@
+$body-color: #000;
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+#keyword {
+  padding: 10px;
+  border: 1px solid #d0d0d0;
+  background:#f1f1f1;
+  &:focus {
+    outline: none;
+  }
+}
+.main-container {
+  width: 80%;
+  margin: auto;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cities-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.zoom-city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background:#f1f1f1;
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  .city-icon {
+    max-height: 50px;
+    max-width: 50px;
+    >img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
